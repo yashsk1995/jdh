@@ -15,6 +15,7 @@
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
      <?php include_once ('./assets/PHP_Templates/nav.php'); ?> 
+     <br><br><br>
      <?php include_once ('./home.php'); ?>  
      <?php include_once ('./assets/PHP_Templates/footer.php'); ?>
 </body>
