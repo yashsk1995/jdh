@@ -1,0 +1,74 @@
+<?php 
+            if( !empty( $lists ) )
+            { 
+              foreach ($lists as $value)
+               {
+					?>
+					<tr>
+          <br>
+						<th scope="row"><?= isset($value['ID']) ? $value['ID'] : '-' ?> </th>
+						
+					</tr>
+          <?php 
+        } 
+        } else
+         { ?>
+					<tr colspan="4">
+						<td>No lists Found</td>
+					</tr>
+					
+          <?php } ?>
+
+
+
+
+
+
+
+ <div class="hotelsCoverSection">
+            <div class="hotelsCoverDiv">
+                <div class="hotelsCoverCaptionDiv ">
+                    <h1 class="hotelsCoverCaption">
+                    Exclusive Listings
+                    <br><br>
+                   
+                    <form>
+                      <div class="form-group ">
+                        <select class="form-control1" id="sel1">
+                          <option>Days Inn</option>
+                          <option>Motel 6</option>
+                          </select>
+                        <br><br>
+                        <select class="form-control1" id="sel2">
+                          <option>Georgia</option>
+                          <option>Florida</option>
+                         </select>
+                      </div>
+                      <button style="margin-left:40px" type="button" class="btn btn-default ">Search</button>
+
+                    </form>
+   <br>
+                    </h1>
+                    <br>
+                    
+                </div>
+            </div>
+</div>
+<br><Br>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+            <image src="./assets/Images/Portfolio/hotel1.jpg">
+            </div>
+            <div class="col-md-6">
+              <h1>Day's Inn</h1><br>
+              <h3>aaaaaaaaaaaaaaaaaaaaa
+                aaaaaaaaaaaaaaaaaaaaa</h3><br><br>
+                <button>More Details</button>
+            </div>
+          </div>
+        </div>
+
+
+
+        

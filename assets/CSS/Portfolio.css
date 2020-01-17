@@ -1,0 +1,63 @@
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+/* 
+  .hotelsCoverCaption {
+    background: rgba(231, 52, 52, 0.438);
+    position: absolute;
+    font-size: 1.5em;
+    padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 800;
+
+}
+.hotelsCoverSection{
+
+} */
+
+  .hotelsCoverDiv {
+    background: url(../Images/Portfolio/header-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    /* margin: 0 auto; */
+}
+
+.btn {
+    background-color: white;
+    color:gray ;
+    border: 0;
+    border-radius: 0;
+    transition: .2s;
+}
+.btn:hover{
+    background-color: rgba(231, 82, 82, 0.856);
+    color:rgb(221, 178, 178) ;
+    
+}
+.form-control1{
+    width: 8em;
+    height: 1.5em;
+    font-weight: 200;
+    border: 0;
+    color: rgba(253, 135, 135, 0.938);
+    background: white;
+}
+.form-control1:hover{
+    background-color: rgba(231, 82, 82, 0.856);
+    color:white ;
+    
+}
+.container {
+    padding: 0;
+  }
