@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<?php
+require_once './config/db_connection.php';
+$lists = getlists();
+?>
+
 <html lang="en">
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
@@ -16,6 +21,28 @@
 
      <?php include_once ('./assets/PHP_Templates/nav.php'); ?> 
      <h1>Code Start here for currentonsale </h1>
+
+     	<?php 
+            if( !empty( $lists ) )
+            { 
+              foreach ($lists as $value)
+               {
+					?>
+					<tr>
+          <br>
+						<th scope="row"><?= isset($value['ID']) ? $value['ID'] : '-' ?> </th>
+						
+					</tr>
+          <?php 
+        } 
+        } else
+         { ?>
+					<tr colspan="4">
+						<td>No lists Found</td>
+					</tr>
+					
+          <?php } ?>
+     
      <?php include_once ('./assets/PHP_Templates/footer.php'); ?>
 </body>
 </html>

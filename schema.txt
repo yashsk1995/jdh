@@ -1,0 +1,31 @@
+
+
+Create DATABASE listing;
+
+use listing;
+CREATE TABLE lists (
+    ID int NOT NULL auto_increment,
+    list_name varchar(255) NOT NULL,
+    list_address varchar(255),
+    state varchar(100) NOT NULL,
+    detail varchar(4000),
+    image LONGTEXT,
+    PRIMARY KEY (ID)
+);
+
+
+use listing;
+drop table lists;
+
+INSERT INTO lists (list_name,list_address,state,detail,image)
+VALUES ('aaaaaaaa','11111111123 old road atlanta',"Georgia"," AAA Hotel Diamond Rating 2
+Acquired in 2016 and contains 52 units
+Currently owned and operated by North Point Hospitality","images");
+
+INSERT INTO lists (list_name,list_address,state,detail,image)
+VALUES ('bbbbb','222222223 old road ghut',"Florida"," bbb hotel diamonf rating 5
+Acquired in 2016 and contains 52 units
+Currently owned and operated by North Point Hospitality","images");
+
+
+select * from lists;
